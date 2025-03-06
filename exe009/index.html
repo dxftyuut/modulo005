@@ -8,12 +8,10 @@
         div.conteiner {
             background-color: lightsteelblue;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             
             height: 400px;
-            align-items: flex-start;
-            flex-shrink: 1;
-            flex-grow: 1;
+            align-items: flex-end;
         }
         div.item {
           
@@ -26,15 +24,16 @@
 
         div#i1 {}
 
-        div#i2 {}
+        div#i2 {align-self: flex-start;}
 
-        div#i3 {}
+        div#i3 {align-self: center;}
 
         div#i4 {}
 
         div#i5 {}
 
-        div#i6 {}
+        div#i6 {align-self: stretch;
+        text-align: center;}
 
         div#i7 {}
 
@@ -45,11 +44,11 @@
 
     <div class="conteiner">
         <div class="item" id="i1">a</div>
-        <div class="item" id="i2">b Lorem ipsum dolor, sit amet consectetur </div>
+        <div class="item" id="i2">b</div>
         <div class="item" id="i3">c</div>
-        <div class="item" id="i4">dkefwuswff</div>
+        <div class="item" id="i4">d</div>
         <div class="item" id="i5">e</div>
-        <div class="item" id="i6">fsfdddddddddddegggh</div>
+        <div class="item" id="i6">f</div>
         <div class="item" id="i7">g</div>
 
 </body>
