@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsteelblue;
+            display: flex;
+            flex-flow: row wrap;
+            
+            height: 400px;
+            align-content: flex-start;
+        }
+        div.item {
+          
+            padding: 20px;
+            background-color: darkblue;
+            color: whitesmoke;
+            border: 1px solid black;
+            
+        }
+
+        div#i1 {order: 0;}
+
+        div#i2 {order: 5;}
+
+        div#i3 {order: 6;}
+
+        div#i4 {order: 1;}
+
+        div#i5 {order: -3;}
+
+        div#i6 {}
+
+        div#i7 {}
+
+    </style>
+</head>
+<body>
+    <h1>minha primeira flex box</h1>
+
+    <div class="conteiner">
+        <div class="item" id="i1">a</div>
+        <div class="item" id="i2">b</div>
+        <div class="item" id="i3">c</div>
+        <div class="item" id="i4">d</div>
+        <div class="item" id="i5">e</div>
+        <div class="item" id="i6">f</div>
+        <div class="item" id="i7">g</div>
+
+</body>
+</html>
